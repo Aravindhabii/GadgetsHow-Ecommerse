@@ -1,21 +1,21 @@
-import * as firebase from 'firebase'
+// import * as firebase from 'firebase'
+import firebase from "firebase/app";
+import "firebase/auth";
+
 
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAvcU1e79CQknVopOVgmhDYenwSKFkpOEg",
-  authDomain: "gadgetshow-c2ad9.firebaseapp.com",
-  projectId: "gadgetshow-c2ad9",
-  storageBucket: "gadgetshow-c2ad9.appspot.com",
-  messagingSenderId: "330134280012",
-  appId: "1:330134280012:web:71620f4ef22fe412e221e9",
-  measurementId: "G-03B1414R1R",
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyDzzA3bLIY7Hv3BvQy9-4KP76O8WNkwXsM",
+    authDomain: "gadgetshow-af0c5.firebaseapp.com",
+    projectId: "gadgetshow-af0c5",
+    storageBucket: "gadgetshow-af0c5.appspot.com",
+    messagingSenderId: "677054906454",
+    appId: "1:677054906454:web:4d10b095780eaaa9ed7bf7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
 
-export const auth = firebase.auth()
+export const auth = firebase.auth();
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
