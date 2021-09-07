@@ -31,11 +31,11 @@ const Header = () => {
       </SubMenu>
 
       <Item key="Register" icon={<UserAddOutlined />} className="float-right">
-        <Link to="/Register">Register</Link>
+        <Link to="/register">Register</Link>
       </Item>
 
       <Item key="Login" icon={<UserOutlined />} className="float-right">
-        <Link to="/Login">Login</Link>
+        <Link to="/login">Login</Link>
       </Item>
     </Menu>
   );
